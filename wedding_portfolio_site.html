@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portofolio Wedding | [Nama Anda]</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+    header { background: #333; color: white; padding: 1em; text-align: center; }
+    nav a { color: white; margin: 0 15px; text-decoration: none; }
+    .container { padding: 2em; max-width: 1000px; margin: auto; }
+    .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1em; }
+    .gallery img { width: 100%; height: auto; border-radius: 8px; }
+    form { display: flex; flex-direction: column; gap: 1em; }
+    input, textarea { padding: 10px; font-size: 1em; }
+    button { padding: 10px; background: #333; color: white; border: none; cursor: pointer; }
+    button:hover { background: #555; }
+    footer { text-align: center; padding: 1em; background: #f0f0f0; margin-top: 2em; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>[Nama Anda] - Fotografer Wedding</h1>
+    <nav>
+      <a href="#portfolio">Portofolio</a>
+      <a href="#booking">Booking</a>
+      <a href="#kontak">Kontak</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <section id="portfolio">
+      <h2>Portofolio</h2>
+      <div class="gallery">
+        <img src="foto1.jpg" alt="Foto Wedding 1">
+        <img src="foto2.jpg" alt="Foto Wedding 2">
+        <img src="foto3.jpg" alt="Foto Wedding 3">
+        <!-- Tambahkan lebih banyak foto sesuai kebutuhan -->
+      </div>
+    </section>
+
+    <section id="booking">
+      <h2>Form Booking</h2>
+      <form action="mailto:emailanda@example.com" method="POST" enctype="text/plain">
+        <input type="text" name="nama" placeholder="Nama Lengkap" required>
+        <input type="email" name="email" placeholder="Email" required>
+        <input type="text" name="tanggal" placeholder="Tanggal Pernikahan" required>
+        <textarea name="pesan" rows="5" placeholder="Detail tambahan..."></textarea>
+        <button type="submit">Kirim Booking</button>
+      </form>
+    </section>
+
+    <section id="kontak">
+      <h2>Kontak</h2>
+      <p>Email: emailanda@example.com</p>
+      <p>Instagram: @usernameInstagram</p>
+      <p>Telepon: 08xxxxxxxxxx</p>
+    </section>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 [Nama Anda]. Semua Hak Dilindungi.</p>
+  </footer>
+
+  <!-- Petunjuk Penempatan Script -->
+  <!--
+    Simpan file ini dengan nama "index.html"
+    dan tempatkan di dalam folder situs Anda.
+    Jika Anda menggunakan layanan seperti Netlify, Vercel, atau GitHub Pages,
+    cukup unggah file ini ke repositori/public folder Anda.
+  -->
+</body>
+</html>
